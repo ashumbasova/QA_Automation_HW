@@ -9,10 +9,10 @@ class Square:
     def __str__(self):
         return "side1: {}, side2: {}".format(self.side1, self.side2)
 
-    def S(self, S):
+    def S(self):
         return self.side1 * self.side2
 
-    def P(self, P):
+    def P(self):
         return self.side1 + self.side1 + self.side2 + self.side2
 
 

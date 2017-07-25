@@ -6,7 +6,7 @@ class Employee:
         self.salary = salary
 
     def __str__(self):
-        return "fullName: {}, position".format(self.fullName, self.position)
+        return "fullName: {}, position: {}".format(self.fullName, self.position)
 
     def name(self):
         nameList = self.fullName.split(" ")
@@ -31,7 +31,7 @@ class ITEmployee(Employee):
         self.skills.append(new_skill)
 
     def __str__(self):
-        return Employee.__str__(self) + "skills: []".format(self.skills)
+        return Employee.__str__(self) + "skills: {}".format(self.skills)
 
     def add_seniority(self, years):
         if 0 <= years <= 3 :
